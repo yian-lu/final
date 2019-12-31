@@ -1,0 +1,32 @@
+/* Stylesheet for toolbar widget. */
+.ft-kai {
+    font-family: 'DFKai-sb', serif;
+}
+
+.ft-ming {
+    font-family: 'PMingLiu', serif;
+}
+
+.ft-sm {
+    font-size: 2em;
+}
+
+.ft-md {
+    font-size: 3em;
+}
+
+.ft-lg {
+    font-size: 4em;
+}
+
+.ft-bd {
+    font-weight: bold;
+}
+
+.ft-it {
+    font-style: italic;
+}
+
+.ft-ul {
+    text-decoration: underline;
+}

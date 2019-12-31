@@ -1,0 +1,123 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: #ff60dd;
+    font-family: 'DFKai-sb', serif;
+}
+
+.header {
+    text-align: center;
+    font-size: 48px;
+    background-color: #4c00ff;
+    color: #ffff00;
+}
+
+.body {
+    width: 70%;
+    height: 600px;
+    float: left;
+}
+
+.image-container {
+    width: 75%;
+    max-width: 75%;
+    max-height: 0;
+    padding-bottom: 50%;
+    background-image: url('../img/bg001.jpg');
+    margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.text-container {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    -webkit-text-stroke: 0.02em none;
+}
+
+.text-editor {
+    position: absolute;
+    top: 0;
+    left: 000px;
+    padding: 12px;
+    color: #fff;
+    min-width: 0%;
+    overflow: auto;
+}
+
+.text-editor:hover, .text-editor:focus {
+    outline: none;
+    padding: 10px;
+    border: 2px dotted #fff;
+}
+
+.text-popup {
+    display: none;
+    position: absolute;
+    width: 249px;
+    height: 63px;
+    border: 1px solid #333;
+    background-color: rgba(119, 119, 119, 0.95);
+    grid-template-columns: repeat(8, 30px);
+    grid-auto-rows: 30px;
+    grid-gap: 1px;
+    text-align: center;
+}
+
+.text-popup .toolbar-btn input {
+    display: none;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    cursor: default;
+}
+
+.btn div {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sidebar {
+    font-size: 24px;
+    background: #d400ff;
+    width: 30%;
+    height: 600px;
+    float: left;
+    text-align: center;
+}
+
+.sidebar button {
+    font-size: 15px;
+}
+
+.image-picker {
+    width: 10%;
+}
+
+.image-picker img {
+    width: 80%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.image-picker img:focus {
+    border: 2px #ff0;
+}
+
+.footer {
+    height: 60px;
+    background-color: #4c00ff;
+    font-family: 'PMingLiu', serif;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 50vh 0 50vh #4c00ff;
+}
