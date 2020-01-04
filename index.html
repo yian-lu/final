@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/toolbar.css">
     <title>長輩圖產生器</title>
@@ -42,63 +43,26 @@
         <div style="height: 10px;"></div>
         <div class="image-container" id="bg">
             <div class="text-container">
-                <div class="text-editor ft-kai ft-md" id="text1" contenteditable="true" draggable="true">早安您好</div>
+                <div class="text-editor ft-kai ft-md va-up" id="text1" contenteditable="true">早安您好</div>
             </div>
             <div class="text-popup">
-                <form>
-                    <div class="toolbar-btn font-btn">
-                        <input type="radio" name="mx" id="btn001">
-                        <label for="btn001" unselectable>楷</label>
-                    </div>
-                    <div class="toolbar-btn font-btn">
-                        <input type="radio" name="mx" id="btn002">
-                        <label for="btn002" unselectable>明</label>
-                    </div>
-                </form>
-                <form>
-                    <div class="toolbar-btn font-size-btn">
-                        <input type="radio" name="mx" id="btn003">
-                        <label for="btn003" unselectable>小</label>
-                    </div>
-                    <div class="toolbar-btn font-size-btn">
-                        <input type="radio" name="mx" id="btn004">
-                        <label for="btn004" unselectable>中</label>
-                    </div>
-                    <div class="toolbar-btn font-size-btn">
-                        <input type="radio" name="mx" id="btn005">
-                        <label for="btn005" unselectable>大</label>
-                    </div>
-                </form>
-            </div>
-            <!-- <div class="text-popup">
-                <button class="toolbar-btn" id="btn001">楷</button>
+                <button class="toolbar-btn pressed" id="btn001">楷</button>
                 <button class="toolbar-btn" id="btn002">明</button>
                 <button class="toolbar-btn" id="btn003">小</button>
-                <button class="toolbar-btn" id="btn004">中</button>
+                <button class="toolbar-btn pressed" id="btn004">中</button>
                 <button class="toolbar-btn" id="btn005">大</button>
                 <button class="toolbar-btn" id="btn006"><img src="img/fa-bold.svg"></button>
                 <button class="toolbar-btn" id="btn007"><img src="img/fa-italic.svg"></button>
                 <button class="toolbar-btn" id="btn008"><img src="img/fa-underline.svg"></button>
-                <span class="toolbar-sel word-col">文字顏色</span>
-                <select name="" id="word-col" class="toolbar-sel">
-                    <option value="#FFFFFF">白</option>
-                    <option value="#000000">黑</option>
-                    <option value="#0000FF">藍</option>
-                    <option value="#FF0000">紅</option>
-                    <option value="#FFFF00">黃</option>
-                    <option value="#00FF00">綠</option>
-                </select>
-                <span class="toolbar-sel border-col">邊框顏色</span>
-                <select name="" id="border-col" class="toolbar-sel">
-                    <option value="none">無</option>
-                    <option value="#FFFFFF">白</option>
-                    <option value="#000000">黑</option>
-                    <option value="#0000FF">藍</option>
-                    <option value="#FF0000">紅</option>
-                    <option value="#FFFF00">黃</option>
-                    <option value="#00FF00">綠</option>
-                </select>
-            </div> -->
+                <button class="toolbar-btn" id="btn009"></button>
+                <button class="toolbar-btn" id="btn010"></button>
+                <button class="toolbar-btn" id="btn011"></button>
+                <button class="toolbar-btn" id="btn012"></button>
+                <button class="toolbar-btn" id="btn013"></button>
+                <button class="toolbar-btn" id="btn014"></button>
+                <button class="toolbar-btn" id="btn015"></button>
+                <button class="toolbar-btn" id="btn016"></button>
+            </div>
         </div>
         <div class="btn">
             <div class="reset-btn">
@@ -114,13 +78,15 @@
     </div>
     <div style="clear:both"></div>
     <div class="footer">
-        <span>&copy; Copyright 2019 Yian Lu</span>
+        <span>&copy; Copyright 2020 Yian Lu</span>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.7.3/dist/interact.min.js"></script>
+    <!-- <script src="./js/jquery-ui.min.js"></script> -->
     <script src="./js/html2canvas.min.js"></script>
     <script src="./js/table.js"></script>
 </body>

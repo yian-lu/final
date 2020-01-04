@@ -1,4 +1,8 @@
-/* Stylesheet for toolbar widget. */
+.pressed {
+    background-color: rgba(128, 128, 128, 0.8) !important;
+    box-shadow: inset 1px 1px 2px 1px rgb(80, 80, 80);
+}
+
 .ft-kai {
     font-family: 'DFKai-sb', serif;
 }
@@ -7,16 +11,8 @@
     font-family: 'PMingLiu', serif;
 }
 
-.ft-sm {
-    font-size: 2em;
-}
-
-.ft-md {
-    font-size: 3em;
-}
-
-.ft-lg {
-    font-size: 4em;
+.ft-sm, .ft-md, .ft-lg {
+    /* Adjust font size based on canvas using jQuery */
 }
 
 .ft-bd {
@@ -29,4 +25,36 @@
 
 .ft-ul {
     text-decoration: underline;
+}
+
+.ft-white {
+    color: #fff;
+}
+
+.ft-black {
+    color: #000;
+}
+
+.ft-red {
+    color: #f00;
+}
+
+.ft-yellow {
+    color: #ff0;
+}
+
+.ft-green {
+    color: #0f0;
+}
+
+.ft-cyan {
+    color: #0ff;
+}
+
+.ft-blue {
+    color: #00f;
+}
+
+.ft-magenta {
+    color: #f0f;
 }
