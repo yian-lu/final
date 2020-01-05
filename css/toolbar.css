@@ -11,8 +11,16 @@
     font-family: 'PMingLiu', serif;
 }
 
-.ft-sm, .ft-md, .ft-lg {
-    /* Adjust font size based on canvas using jQuery */
+.ft-sm {
+    font-size: 3vw;
+}
+
+.ft-md {
+    font-size: 4.5vw;
+}
+
+.ft-lg {
+    font-size: 6vw;
 }
 
 .ft-bd {
