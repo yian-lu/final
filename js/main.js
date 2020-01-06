@@ -20,8 +20,7 @@ $(document).ready(function () {
             if (dragging == false) {
                 if (e.offsetX < 5 || e.offsetX > ($(this).innerWidth() - 5) || e.offsetY < 5 || e.offsetY > ($(this).innerHeight() - 5)) {
                     $('.text-editor').css({ 'cursor': 'move' })
-                }
-                else {
+                } else {
                     $('.text-editor').css({ 'cursor': 'text' })
                 }
             } else {
@@ -83,41 +82,28 @@ $(document).ready(function () {
 
     $('.text-popup')
         .on('click', '#btn001', function () {
-            $('#btn001').addClass('pressed')
-            $('#btn002').removeClass('pressed')
             $(activeTextarea).addClass('ft-kai')
             $(activeTextarea).removeClass('ft-ming')
         })
 
         .on('click', '#btn002', function () {
-            $('#btn002').addClass('pressed')
-            $('#btn001').removeClass('pressed')
             $(activeTextarea).addClass('ft-ming')
             $(activeTextarea).removeClass('ft-kai')
         })
 
         .on('click', '#btn003', function () {
-            $('#btn003').addClass('pressed')
-            $('#btn004').removeClass('pressed')
-            $('#btn005').removeClass('pressed')
             $(activeTextarea).addClass('ft-sm')
             $(activeTextarea).removeClass('ft-md')
             $(activeTextarea).removeClass('ft-lg')
         })
 
         .on('click', '#btn004', function () {
-            $('#btn004').addClass('pressed')
-            $('#btn003').removeClass('pressed')
-            $('#btn005').removeClass('pressed')
             $(activeTextarea).addClass('ft-md')
             $(activeTextarea).removeClass('ft-sm')
             $(activeTextarea).removeClass('ft-lg')
         })
 
         .on('click', '#btn005', function () {
-            $('#btn005').addClass('pressed')
-            $('#btn003').removeClass('pressed')
-            $('#btn004').removeClass('pressed')
             $(activeTextarea).addClass('ft-lg')
             $(activeTextarea).removeClass('ft-sm')
             $(activeTextarea).removeClass('ft-md')
@@ -125,33 +111,24 @@ $(document).ready(function () {
 
         .on('click', '#btn006', function () {
             if ($(this).hasClass('pressed')) {
-                $(this).removeClass('pressed')
                 $(activeTextarea).removeClass('ft-bd')
-            }
-            else {
-                $(this).addClass('pressed')
+            } else {
                 $(activeTextarea).addClass('ft-bd')
             }
         })
 
         .on('click', '#btn007', function () {
             if ($(this).hasClass('pressed')) {
-                $(this).removeClass('pressed')
                 $(activeTextarea).removeClass('ft-it')
-            }
-            else {
-                $(this).addClass('pressed')
+            } else {
                 $(activeTextarea).addClass('ft-it')
             }
         })
 
         .on('click', '#btn008', function () {
             if ($(this).hasClass('pressed')) {
-                $(this).removeClass('pressed')
                 $(activeTextarea).removeClass('ft-ul')
-            }
-            else {
-                $(this).addClass('pressed')
+            } else {
                 $(activeTextarea).addClass('ft-ul')
             }
         })
