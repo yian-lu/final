@@ -43,12 +43,27 @@ $(document).ready(function () {
         .on('click', '.text-editor', function (e) {
             if ($(this).css('cursor') == 'text') {
                 activeTextarea = e.target
-                if ($(activeTextarea).hasClass('ft-sm')) {
+                $('.toolbar-btn').removeClass('pressed')
+                if ($(activeTextarea).hasClass('ft-kai')) {
                     $('#btn001').addClass('pressed')
-                } else if ($(activeTextarea).hasClass('ft-md')) {
+                } else if ($(activeTextarea).hasClass('ft-ming')) {
                     $('#btn002').addClass('pressed')
-                } else if ($(activeTextarea).hasClass('ft-lg')) {
+                }
+                if ($(activeTextarea).hasClass('ft-sm')) {
                     $('#btn003').addClass('pressed')
+                } else if ($(activeTextarea).hasClass('ft-md')) {
+                    $('#btn004').addClass('pressed')
+                } else if ($(activeTextarea).hasClass('ft-lg')) {
+                    $('#btn005').addClass('pressed')
+                }
+                if ($(activeTextarea).hasClass('ft-bd')) {
+                    $('#btn006').addClass('pressed')
+                }
+                if ($(activeTextarea).hasClass('ft-it')) {
+                    $('#btn007').addClass('pressed')
+                }
+                if ($(activeTextarea).hasClass('ft-ul')) {
+                    $('#btn008').addClass('pressed')
                 }
                 var popupX = $('.text-popup').outerWidth(true)
                 var popupY = $('.text-popup').outerHeight(true)
@@ -254,7 +269,7 @@ $(document).ready(function () {
         window.scrollTo(0, 0)
         html2canvas($('#bg')[0], { useCORS: true, allowTaint: true }).then(function (canvas) {
             $(canvas).appendTo('.canvas')
-            $('.canvas').css({'display': 'block'})
+            $('.canvas').css({ 'display': 'block' })
         })
     })
 
