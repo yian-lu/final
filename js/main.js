@@ -43,6 +43,13 @@ $(document).ready(function () {
         .on('click', '.text-editor', function (e) {
             if ($(this).css('cursor') == 'text') {
                 activeTextarea = e.target
+                if ($(activeTextarea).hasClass('ft-sm')) {
+                    $('#btn001').addClass('pressed')
+                } else if ($(activeTextarea).hasClass('ft-md')) {
+                    $('#btn002').addClass('pressed')
+                } else if ($(activeTextarea).hasClass('ft-lg')) {
+                    $('#btn003').addClass('pressed')
+                }
                 var popupX = $('.text-popup').outerWidth(true)
                 var popupY = $('.text-popup').outerHeight(true)
                 var x = Math.max(e.pageX - 10, $canvas.offset().left)
