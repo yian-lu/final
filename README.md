@@ -2,8 +2,6 @@
 
 認同請分享。
 
-See [demo](https://yian-lu.github.io/final/index.html) on my GitHub page.
-
 ### Introduction ###
 
 #### 主要功能： ####
@@ -20,6 +18,8 @@ See [demo](https://yian-lu.github.io/final/index.html) on my GitHub page.
     能夠選擇的文字樣式包括**明體**及**楷體**兩種字體、**小**、**中**、**大**三種文字尺寸、**粗體**、**斜體**及**底線**三種樣式及八種文字顏色。
 
 ### Demo ###
+
+See [demo](https://yian-lu.github.io/final/index.html) on my GitHub page.
 
 ### Credit ###
 
