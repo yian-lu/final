@@ -2,7 +2,7 @@
 
 認同請分享。
 
-### Introduction ###
+## Introduction ###
 
 #### 主要功能： ####
 
@@ -17,15 +17,15 @@
 *   修改文字樣式。將滑鼠移到文字框內，游標變為文字符號時點擊會跳出工具列。
     能夠選擇的文字樣式包括**明體**及**楷體**兩種字體、**小**、**中**、**大**三種文字尺寸、**粗體**、**斜體**及**底線**三種樣式及八種文字顏色。
 
-### Demo ###
+## Demo ###
 
 See [demo](https://yian-lu.github.io/final/index.html) on my GitHub page.
 
-### Credit ###
+## Credit ###
 
 This project runs on jQuery, with dependency on [html2canvas](https://github.com/niklasvh/html2canvas).
 
-### License ###
+## License ###
 
 Copyright &copy; 2020 Yian Lu
 
@@ -50,6 +50,6 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-### Contact ###
+## Contact ###
 
 For further information please email to [yal.xyz@gmail.com](mailto:yal.xyz@gmail.com).
